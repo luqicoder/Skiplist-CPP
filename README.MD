@@ -30,6 +30,7 @@
 | 10w  | 63125   | 0.06978 |
 | 50w  | 316082  | 0.65437 |
 | 100w  | 632059 | 1.67133 |
+
 每秒可处理写请求数（QPS）: 59.83w
 ### 取数据操作
 |  取数据规模(万条)   | 耗时(秒)  |
@@ -37,8 +38,9 @@
 | 10w   | 0.06184 |
 | 50w   | 0.63370 |
 | 100w  | 1.47907 |
+
 每秒可处理读请求数（QPS）: 67.61w
 ## 参考
-[维基百科](https://en.wikipedia.org/wiki/Skip_list)
-[跳表实现-知乎](https://zhuanlan.zhihu.com/p/224575404)
-[github](https://github.com/youngyangyang04/Skiplist-CPP)
+* [维基百科](https://en.wikipedia.org/wiki/Skip_list)
+* [跳表实现-知乎](https://zhuanlan.zhihu.com/p/224575404)
+* [github](https://github.com/youngyangyang04/Skiplist-CPP)
