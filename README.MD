@@ -21,15 +21,28 @@
 ## 插入数据
 ![img](img1.jpg)
 
+## 实例编译运行
+```
+[root@iz2ze17qjre4vurq6066pqz skiplist]# g++ main.cpp -o main -std=c++11 -lpthread
+[root@iz2ze17qjre4vurq6066pqz skiplist]# ./main
+```
+
 ## 压力测试
+### 编译运行
+```
+[root@iz2ze17qjre4vurq6066pqz skiplist]# g++ stress_test.cpp -o stress_test -std=c++11 -lpthread
+[root@iz2ze17qjre4vurq6066pqz skiplist]# ./stress_test 
+skiplist size()=63078
+insert elapsed:0.127833
+```
 ### 插入操作
 跳表树高：20  
 采用随机插入数据测试：
-|  插入数据规模(万条) | 跳表中实际插入数据总数  | 耗时(秒)  |
+|  插入数据规模(万条) | 跳表中实际插入数据总数  | 耗时(秒)(windows下测试)  |  耗时(秒)(linux下测试)  |
 |  ----  | ----  | ----  |
-| 10w  | 63125   | 0.06978 |
-| 50w  | 316082  | 0.65437 |
-| 100w  | 632059 | 1.67133 |
+| 10w  | 63125   | 0.06978 | 0.12487 |
+| 50w  | 316082  | 0.65437 | 1.21392 |
+| 100w  | 632059 | 1.67133 | 2.64166 |
 
 每秒可处理写请求数（QPS）: 59.83w
 ### 取数据操作
