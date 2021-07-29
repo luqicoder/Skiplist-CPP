@@ -28,6 +28,8 @@
 ```
 
 ## 压力测试
+windows为本机测试  
+Linux为阿里云轻量级应用服务器(1核2G)测试
 ### 编译运行
 ```
 [root@iz2ze17qjre4vurq6066pqz skiplist]# g++ stress_test.cpp -o stress_test -std=c++11 -lpthread
